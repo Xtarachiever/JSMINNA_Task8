@@ -29,13 +29,14 @@ input#email{
     position: relative;
     padding: 10px 30px 10px 30px;
     margin-top: 20px;
-    background-color: brown;
+    background-color: purple;
     color: white;
     cursor: pointer;
 }
 #login:disabled{
     cursor: not-allowed;
     color: rgb(129, 118, 118);
+    background-color:gray;
 }
 #checkbox{
     position: absolute;
