@@ -13,6 +13,8 @@ const passWord=document.getElementById('password');
 const email=document.getElementById('email')
 const confirmPass=document.getElementById('confirm');
 const checkBox=document.getElementById('check');
+const loader=document.getElementById('loader')
+const siGn=document.getElementsByClassName('sign-up')
 
 checkBox.addEventListener("click",()=>{
     if((checkBox.checked==false)||(firstName.value&&lastName.value&&passWord.value&&email.value&&confirmPass.value)==""){
@@ -86,8 +88,12 @@ form.addEventListener('submit',(e)=>{
         email.focus();
         messages.push("Email Instructions not followed")
     }
-    else{
-        alert("Form successfully submitted")
+     else{
+        // alert("Form successfully submitted")
+        loader.style.display="block"
+        setTimeout(function(){
+            siGn.addClass("loader")
+        }, alert("Form successfully submitted"));
     }
     if(messages.length>0){
         e.preventDefault()
