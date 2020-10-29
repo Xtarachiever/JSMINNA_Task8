@@ -65,7 +65,7 @@ a{
 #login{
     display:flex;
     justify-content:center;
-    color: rgb(97, 96, 96);
+    color: white;
     top:50%;
     transform:translateY(100%)
 }
