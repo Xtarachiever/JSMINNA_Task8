@@ -51,7 +51,7 @@ function verifyEmail(){
     }
 }
 function conFirm(){
-    if(passWord.value = confirmPass.value){
+    if(passWord.value === confirmPass.value){
         confirmPass.style.border="1px solid green"
         errorConfirm.textContent=" "
         return true;
