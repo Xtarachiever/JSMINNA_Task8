@@ -28,24 +28,30 @@ checkBox.addEventListener("click",()=>{
 
 function veriFy(){
     const paraM= /^(?=.*\d)(?=.*[a-z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
-    const namesParam= /^[A-Za-z]*$/;
-    const emailParam = /^[a-zA-z]+[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if(document.getElementById('password').value.match(paraM)){
         passWord.style.border="1px solid green"
         errorElement.textContent=" "
         return true;
     }
+}
+function verifyName(){
+    const namesParam= /^[A-Za-z]*$/;
     if((firstName.value.match(namesParam)||lastName.value.match(namesParam))){
         name.style.border="1px solid green"
         errorName.textContent=" "
         return true;
     }
+}
+function verifyEmail(){
+    const emailParam = /^[a-zA-z]+[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     if(document.getElementById('email').value.match(emailParam)){
         email.style.border="1px solid green"
         errorEmail.textContent=" "
         return true;
     }
-    if(confirmPass.value = passWord.value){
+}
+function conFirm(){
+    if(passWord.value = confirmPass.value){
         confirmPass.style.border="1px solid green"
         errorConfirm.textContent=" "
         return true;
