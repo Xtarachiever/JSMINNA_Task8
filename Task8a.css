@@ -35,8 +35,8 @@ input#email{
 }
 #login:disabled{
     cursor: not-allowed;
-    color: black;
-    background-color:gray;
+    color: rgb(129, 118, 118);
+    background-color: rgb(167, 160, 160);
 }
 #checkbox{
     position: absolute;
