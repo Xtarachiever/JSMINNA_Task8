@@ -66,13 +66,13 @@ form.addEventListener('submit',(e)=>{
         name.style.border="1px solid red"
         errorName.textContent="Name cannot contain numbers"
         name.focus();
-        messages.push("Password Instructions not followed")
+        messages.push("Name Instructions not followed")
     }
     else if(passWord.value != confirmPass.value){
         confirmPass.style.border="1px solid red"
         errorConfirm.textContent="Password values not the same"
         confirmPass.focus();
-        messages.push("Password Instructions not followed")
+        messages.push("Password not the same")
     }
     else if(email.value.search(emailParams)==-1){
         email.style.border="1px solid red"
