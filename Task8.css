@@ -88,8 +88,8 @@ a{
     width: 20px;
     height: 20px;
     animation: spin 2s linear infinite;
-    top:490px;
-    left: 40%;
+    top:500px;
+    left: 50%;
     transform: translate(-50%,-50%);
     display: none;
   }
@@ -144,8 +144,8 @@ a{
     width: 20px;
     height: 20px;
     animation: spin 2s linear infinite;
-    top:510px;
-    left: 40%;
+    top:500px;
+    left: 35%;
     transform: translate(-50%,-50%);
     display: none;
   }
