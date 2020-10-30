@@ -88,12 +88,17 @@ form.addEventListener('submit',(e)=>{
         email.focus();
         messages.push("Email Instructions not followed")
     }
-     else{
+    else{
         // alert("Form successfully submitted")
         loader.style.display="block"
         setTimeout(function(){
-            siGn.addClass("loader")
+            $(".sign-up").addClass("loader")
+            // siGn.addClass("loader")
         }, alert("Form successfully submitted"));
+        setTimeout(function(){
+            // siGn.removeClass("loader")
+            $(".sign-up").removeClass("loader")
+        }, 3000);
     }
     if(messages.length>0){
         e.preventDefault()
